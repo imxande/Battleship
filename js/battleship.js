@@ -34,17 +34,22 @@ while(isSunk === false){
         if (userGuess == locationOne || userGuess == locationTwo || userGuess == locationThree){
             // add to hits
             hits = hits + 1;
+            alert('HIT!'); // alert if is a hit
 
             if (hits == 3){
                 isSunk = true;
                 alert("You have sunk the ship!");
             } 
+        } else {
+            alert('MISS!')
         } 
     }
 }
 
+const accuracy = (3 / guesses) * 100;
+
 // Showing stats
-stats += `You took ${guesses} guesses to sink the battleship, wich means your shooting accuracy was ${3/guesses}`;
+stats += `You took ${guesses} guesses to sink the battleship, wich means your shooting accuracy was ${accuracy}%`;
 alert(stats);
 
 
