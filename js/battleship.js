@@ -52,7 +52,7 @@ while(isSunk === false){
 const accuracy = (3 / guesses) * 100;
 
 // Showing stats
-stats += `You took ${guesses} guesses to sink the battleship, wich means your shooting accuracy was ${accuracy}%`;
+stats += `You took ${guesses} guesses to sink the battleship, which means your shooting accuracy was ${accuracy}%`;
 alert(stats);
 
 
