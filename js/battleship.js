@@ -1,7 +1,10 @@
+// variable to add random location generator
+var randomLoc = Math.floor(Math.random() * 5);
+
 // Declare three variables to hold the location of each cell of the ship
-var locationOne = 3; 
-var locationTwo = 4;
-var locationThree = 5;
+var locationOne = randomLoc; 
+var locationTwo = randomLoc + 1;
+var locationThree = randomLoc + 2;
 
 // Variable to hold the value of of user's guess 
 var userGuess;
